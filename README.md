@@ -40,7 +40,7 @@ Cambiar el archivo proxy.conf.json y modificar el puerto en el que se encuentra 
 
 # Base de datos
 
-![Base de datos](varios/db/HulkStoreFinal.PNG)
+![Base de datos](hulkStore/varios/db/HulkStoreFinal.PNG)
 
 # ApiRest 
 
