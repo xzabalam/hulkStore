@@ -40,7 +40,7 @@ Cambiar el archivo proxy.conf.json y modificar el puerto en el que se encuentra 
 
 # Base de datos
 
-![Base de datos](https://github.com/xzabalam/hulkStore/blob/master/hulk.store/varios/app/store.PNG)
+![Base de datos](https://github.com/xzabalam/hulkStore/blob/master/hulk.store/varios/db/HulkStoreFinal.PNG)
 
 # ApiRest 
 
