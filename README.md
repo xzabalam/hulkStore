@@ -3,7 +3,7 @@
 Ejecturar los siguientes comandos:
 
 ```bash
-git clone 
+git clone git@github.com:xzabalam/hulkStore.git
 cd hulkStore
 ```
 
@@ -40,7 +40,7 @@ Cambiar el archivo proxy.conf.json y modificar el puerto en el que se encuentra 
 
 # Base de datos
 
-![Base de datos](varios/db/HulkStoreFinal.PNG)
+![Base de datos](https://github.com/xzabalam/hulkStore/blob/master/hulk.store/varios/db/HulkStoreFinal.PNG)
 
 # ApiRest 
 
@@ -335,16 +335,16 @@ Obtener el listado de productos almacenados en el carrito de compras
 # Pantallas del aplicativo
 
 ## Pantalla principal - Listado de categorías
-![AppPrincipal](varios/app/store.PNG)
+![AppPrincipal](https://github.com/xzabalam/hulkStore/blob/master/hulk.store/varios/app/store.PNG)
 
 ## Listado de productos al seleccionar una categoría
-![AppPrincipal](varios/app/store2.PNG)
+![AppPrincipal](https://github.com/xzabalam/hulkStore/blob/master/hulk.store/varios/app/store2.PNG)
 
 ## Detalle del producto antes de agregarlo al carrito de compras
-![AppPrincipal](varios/app/store3.PNG)
+![AppPrincipal](https://github.com/xzabalam/hulkStore/blob/master/hulk.store/varios/app/store3.PNG)
 
 ## Carrito de compras
-![AppPrincipal](varios/app/store4.PNG)
+![AppPrincipal](https://github.com/xzabalam/hulkStore/blob/master/hulk.store/varios/app/store4.PNG)
 
 ## Listado de órdenes guardadas
-![AppPrincipal](varios/app/store5.PNG)
+![AppPrincipal](https://github.com/xzabalam/hulkStore/blob/master/hulk.store/varios/app/store5.PNG)
