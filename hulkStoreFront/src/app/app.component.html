@@ -1,0 +1,30 @@
+<mat-toolbar color="primary">
+  <button
+    [routerLink]="['/store']"
+    mat-icon-button
+    class="example-icon"
+    aria-label="Inicio"
+  >
+    <mat-icon aria-hidden="false" aria-label="Inicio">home</mat-icon>
+  </button>
+  <span>TodoUno - Hulk Store</span>
+  <span class="spacer"></span>
+  <button
+    title="Ordenes"
+    [routerLink]="['/ordenes']"
+    mat-icon-button
+    class="example-icon"
+    aria-label="Ordenes de compra"
+  >
+    <mat-icon aria-hidden="false" aria-label="Ordenes">note</mat-icon>
+  </button>
+</mat-toolbar>
+<div class="contenedor">
+  <div class="rutas">
+    <router-outlet></router-outlet>
+  </div>
+
+  <hulk-store-carrito-compras
+    >cargando carrito de compras</hulk-store-carrito-compras
+  >
+</div>

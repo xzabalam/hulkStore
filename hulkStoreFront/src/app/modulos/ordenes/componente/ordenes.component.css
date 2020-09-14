@@ -1,0 +1,11 @@
+.nombre {
+  margin: 10px;
+}
+
+.contenedor-ordenes {
+  padding: 50px;
+}
+
+.imagen {
+  max-width: 50px !important;
+}

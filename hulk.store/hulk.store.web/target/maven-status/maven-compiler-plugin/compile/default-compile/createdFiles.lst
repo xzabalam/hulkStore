@@ -1,0 +1,10 @@
+todouno\hulk\store\web\rest\impl\ProductoRestImpl.class
+todouno\hulk\store\web\rest\ICarritoCompraRest.class
+todouno\hulk\store\web\rest\ICategoriaRest.class
+todouno\hulk\store\web\rest\impl\CarritoCompraRestImpl.class
+todouno\hulk\store\web\controlador\CategoriaControlador.class
+todouno\hulk\store\web\rest\impl\CategoriaRestImpl.class
+todouno\hulk\store\web\rest\IProductoRest.class
+todouno\hulk\store\web\rest\util\UtilRest.class
+todouno\hulk\store\web\rest\impl\IOrdenRestImpl.class
+todouno\hulk\store\web\rest\IOrdenRest.class

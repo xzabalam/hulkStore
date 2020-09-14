@@ -1,0 +1,35 @@
+<div class="lista-producto">
+  <mat-card
+    class="hulk-store-producto"
+    *ngFor="let producto of listadoProductos"
+  >
+    <mat-card-header>
+      <mat-card-title>{{ producto.titulo }}</mat-card-title>
+    </mat-card-header>
+    <img
+      mat-card-image
+      src="{{ producto.urlImagen }}"
+      alt="{{ producto.titulo }}"
+    />
+    <mat-card-content>
+      <p>{{ producto.resumen }}</p>
+      <p><b>Precio:</b> {{ producto.costoVenta | currency }}</p>
+      <p><b>Stock:</b> {{ producto.cantidad }} unidades</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <div class="disponibilidad" *ngIf="producto.cantidad > 0">
+        <a
+          mat-raised-button
+          color="primary"
+          [routerLink]="['/detalle-producto', producto.codigo]"
+        >
+          Comprar
+        </a>
+      </div>
+
+      <div *ngIf="producto.cantidad <= 0">
+        <h2 class="producto-no-disponible">No disponible en este momento</h2>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+</div>

@@ -1,0 +1,17 @@
+.hulk-store-categoria {
+  margin: 10px;
+  max-width: 400px;
+  min-width: 400px;
+  width: 400px;
+}
+
+.lista-categorias {
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  padding: 50px 10px;
+}
+
+.mat-card-image {
+  height: 400px !important;
+}

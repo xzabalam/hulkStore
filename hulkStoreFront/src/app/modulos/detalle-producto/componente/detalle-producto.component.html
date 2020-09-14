@@ -1,0 +1,48 @@
+<section>
+  <div *ngIf="producto" class="detalle-producto">
+    <div class="imagen">
+      <img src="{{ producto.urlImagen }}" alt="{{ producto.titulo }}" />
+    </div>
+    <div class="detalle">
+      <h1>{{ producto.titulo }}</h1>
+      <p>{{ producto.descripcion }}</p>
+      <hr />
+      <p><b>SKU:</b> {{ producto.sku }}</p>
+      <p><b>Precio:</b> {{ producto.costoVenta | currency }}</p>
+      <p><b>Descuento:</b> {{ producto.descuento | currency }}</p>
+      <p><b>Stock:</b> {{ producto.cantidad }} unidades</p>
+
+      <div class="disponibilidad" *ngIf="producto.cantidad > 0">
+        <h2 class="producto-disponible">Disponible</h2>
+
+        <mat-label class="cantidad-seleccionada"
+          >Cantidad seleccionada {{ cantidadSeleccionada }}</mat-label
+        >
+        <mat-slider
+          class="cantidad-seleccionada"
+          thumbLabel
+          min="1"
+          max="{{ producto.cantidad }}"
+          step="1"
+          [(ngModel)]="cantidadSeleccionada"
+          value="1"
+        ></mat-slider>
+
+        <div class="boton-agregar-carrito">
+          <button
+            [disabled]="producto.cantidad === 0"
+            mat-raised-button
+            color="primary"
+            (click)="onClickAgregarCarritoCompras()"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+
+      <div *ngIf="producto.cantidad <= 0">
+        <h2 class="producto-no-disponible">No disponible en este momento</h2>
+      </div>
+    </div>
+  </div>
+</section>

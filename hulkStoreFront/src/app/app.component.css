@@ -1,0 +1,13 @@
+.contenedor {
+  display: flex;
+  flex: 1 1 100%;
+  min-height: calc(100vh - 70px);
+}
+
+.rutas {
+  flex: 1 1 70%;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}

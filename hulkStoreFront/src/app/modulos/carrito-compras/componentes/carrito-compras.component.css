@@ -1,0 +1,44 @@
+.carrito-compra {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #d5d5d5;
+  flex: 1 1 30%;
+  border-left: 1px solid #ddd;
+}
+
+.carrito-compra .titulo {
+  justify-content: center;
+  display: flex;
+  flex: 1 1 100%;
+  align-items: center;
+  height: 40px;
+}
+
+.carrito-compra .titulo span {
+  font-size: 20px;
+}
+
+.carrito-compra .tabla {
+  flex: 1 1 100%;
+}
+
+.carrito-compra .tabla table {
+  width: 100%;
+}
+
+.imagen {
+  max-width: 50px !important;
+}
+
+.valores {
+  text-align: right;
+}
+
+.negrita {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.pagar {
+  padding: 10px;
+}

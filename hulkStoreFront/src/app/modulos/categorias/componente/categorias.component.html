@@ -1,0 +1,25 @@
+<div class="lista-categorias">
+  <mat-card
+    class="hulk-store-categoria"
+    *ngFor="let categoria of listadoCategoriasActivas"
+  >
+    <mat-card-header>
+      <mat-card-title>{{ categoria.nombre }}</mat-card-title>
+    </mat-card-header>
+    <img
+      mat-card-image
+      src="{{ categoria.urlImagen }}"
+      alt="{{ categoria.nombre }}"
+    />
+    <mat-card-content>
+      <p>
+        {{ categoria.descripcion }}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <a mat-button [routerLink]="['/productos', categoria.codigo]">
+        Ver productos
+      </a>
+    </mat-card-actions>
+  </mat-card>
+</div>

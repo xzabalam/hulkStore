@@ -1,0 +1,47 @@
+<div class="contenedor-ordenes">
+  <h1>Ordenes de compra</h1>
+
+  <mat-accordion>
+    <mat-expansion-panel
+      (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false"
+      *ngFor="let orden of listadoOrdenesActivas"
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-title> Orden: {{ orden.codigo }} </mat-panel-title>
+        <mat-panel-description>
+          <p class="nombre"><b>Comprado por: </b> {{ orden.nombreUsuario }}</p>
+          <p class="nombre">
+            <b>Fecha de compra:</b> {{ orden.fechaCreacion | date }}
+          </p>
+          <p class="nombre"><b>Valor total:</b> {{ orden.total | currency }}</p>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <table class="mat-table">
+        <thead>
+          <th>Imagen</th>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Valor</th>
+          <th>Subtotal</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let producto of orden.listadoProductos">
+            <td>
+              <img
+                class="imagen"
+                src="{{ producto.urlImagen }}"
+                alt="{{ producto.titulo }}"
+              />
+            </td>
+            <td>{{ producto.titulo }}</td>
+            <td>{{ producto.cantidadSeleccionada }}</td>
+            <td>{{ producto.costoVenta | currency }}</td>
+            <td>{{ producto.sibtotal | currency }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
