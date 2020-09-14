@@ -3,7 +3,7 @@
 Ejecturar los siguientes comandos:
 
 ```bash
-git clone 
+git clone git@github.com:xzabalam/hulkStore.git
 cd hulkStore
 ```
 
