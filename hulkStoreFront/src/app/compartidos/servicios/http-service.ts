@@ -2,9 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { isUndefined } from 'util';
 
-/**
- * @author fxzm210418
- */
 @Injectable({
   providedIn: 'root',
 })
